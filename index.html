@@ -3,39 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEUMORPHISM 🤖</title>
+    <title>Music Player - LSD</title>
     <script
       src="https://kit.fontawesome.com/8719a7912f.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   </head>
   <body>
-    <img src="assets/logo_lsd.svg" class="svg logo_lsd" alt="logo_lsd" />
+    <img src="assets/img/logo_lsd.svg" class="svg logo_lsd" alt="logo_lsd" />
     <img
-      src="assets/arcoiris.svg"
+      src="assets/img/arcoiris.svg"
       class="svg svg_item arcoiris"
       alt="arcoiris"
     />
-    <img src="assets/carita.svg" class="svg svg_item carita" alt="carita" />
-    <img src="assets/llave.svg" class="svg svg_item llave" alt="llave" />
-    <img src="assets/trueno.svg" class="svg svg_item trueno" alt="trueno" />
-    <img src="assets/planeta.svg" class="svg svg_item planeta" alt="planeta" />
+    <img src="assets/img/carita.svg" class="svg svg_item carita" alt="carita" />
+    <img src="assets/img/llave.svg" class="svg svg_item llave" alt="llave" />
+    <img src="assets/img/trueno.svg" class="svg svg_item trueno" alt="trueno" />
+    <img src="assets/img/planeta.svg" class="svg svg_item planeta" alt="planeta" />
 
     <div class="container">
       <div class="player">
         <div class="left_player">
           <div class="state_player">PLAYING NOW</div>
           <div class="album_player">
-            <img src="assets/album_lsd.jpg" alt="album_lsd" />
+            <img src="assets/img/album_lsd.jpg" alt="album_lsd" />
           </div>
         </div>
         <div class="right_player">
-          <h4 class="artist_player" id="artist">Labrinth, Sia & Diplo</h4>
-          <h3 class="songname_player" id="songname">LSD - Thunderclouds</h3>
+          <h4 class="artist_player" id="artist">Labrinth, Sia & Diplo - LSD</h4>
+          <h3 class="songname_player" id="songname"></h3>
 
           <div class="control_player">
-            <div class="control_btn control_backward btn_medium" id="previus">
+            <div class="control_btn control_backward btn_medium btn_disabled" id="previus">
               <i class="fas fa-backward"></i>
             </div>
             <div class="control_btn control_play pink" id="play">
@@ -56,7 +57,7 @@
               </div>
 
               <audio class="audio" controls id="audio">
-                <source src="assets/lsd_thunderclouds.mp3" type="audio/mpeg" />
+                <source src="" type="audio/mpeg" id="audiosource"/>
               </audio>
             </div>
           </div>
