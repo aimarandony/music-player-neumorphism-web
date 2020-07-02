@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example01</title>
+    <title>NEUMORPHISM 🤖</title>
     <script
       src="https://kit.fontawesome.com/8719a7912f.js"
       crossorigin="anonymous"
@@ -11,55 +11,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <img src="assets/logo_lsd.svg" class="svg logo_lsd" alt="logo_lsd" />
+    <img
+      src="assets/arcoiris.svg"
+      class="svg svg_item arcoiris"
+      alt="arcoiris"
+    />
+    <img src="assets/carita.svg" class="svg svg_item carita" alt="carita" />
+    <img src="assets/llave.svg" class="svg svg_item llave" alt="llave" />
+    <img src="assets/trueno.svg" class="svg svg_item trueno" alt="trueno" />
+    <img src="assets/planeta.svg" class="svg svg_item planeta" alt="planeta" />
+
     <div class="container">
       <div class="player">
-        <div class="player__controls">
-          <div class="player__btn player__btn--small">
-            <i class="fas fa-arrow-left"></i>
-          </div>
-          <h5 class="player__title">playing now</h5>
-          <div class="player__btn player__btn--small">
-            <i class="fas fa-bars"></i>
+        <div class="left_player">
+          <div class="state_player">PLAYING NOW</div>
+          <div class="album_player">
+            <img src="assets/album_lsd.jpg" alt="album_lsd" />
           </div>
         </div>
+        <div class="right_player">
+          <h4 class="artist_player" id="artist">Labrinth, Sia & Diplo</h4>
+          <h3 class="songname_player" id="songname">LSD - Thunderclouds</h3>
 
-        <div class="player__album">
-          <img
-            src="assets/album_lsd.jpg"
-            alt="album twp"
-            class="player__img"
-          />
-        </div>
-
-        <h2 class="player__artist">Labrinth, Sia & Diplo</h2>
-        <h3 class="player__song">LSD – Thunderclouds</h3>
-
-        <input
-          type="range"
-          value="0"
-          class="player__level"
-          id="seekbar"
-        />
-
-        <div class="audio__duration">
-          <div class="start" id="start">00:00</div>
-          <div class="end" id="end">00:00</div>
-        </div>
-
-        <audio class="player__audio" controls id="audio">
-          <source src="assets/lsd_thunderclouds.mp3" type="audio/mpeg" />
-        </audio>
-
-        <div class="player__controls">
-          <div class="player__btn player__btn--medium">
-            <i class="fas fa-backward"></i>
+          <div class="control_player">
+            <div class="control_btn control_backward btn_medium" id="previus">
+              <i class="fas fa-backward"></i>
+            </div>
+            <div class="control_btn control_play pink" id="play">
+              <i class="fas fa-play play-btn"></i>
+              <i class="fas fa-pause pause-btn hide"></i>
+            </div>
+            <div class="control_btn control_forward btn_medium" id="next">
+              <i class="fas fa-forward"></i>
+            </div>
           </div>
-          <div class="player__btn player__btn--medium yellow" id="play">
-            <i class="fas fa-play play-btn"></i>
-            <i class="fas fa-pause pause-btn hide"></i>
-          </div>
-          <div class="player__btn player__btn--medium">
-            <i class="fas fa-forward"></i>
+
+          <div class="level_player">
+            <div class="c_level">
+              <input type="range" value="0" class="input_range" id="seekbar" />
+              <div class="audio_duration">
+                <div class="start" id="start">00:00</div>
+                <div class="end" id="end">00:00</div>
+              </div>
+
+              <audio class="audio" controls id="audio">
+                <source src="assets/lsd_thunderclouds.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
           </div>
         </div>
       </div>
